@@ -1,0 +1,38 @@
+import React from 'react'
+
+function App() {
+  const students=[
+    {id:1,name:"khyathi",course:"React",marks:90},
+    {id:1,name:"jithya",course:"Angular",marks:85},
+    {id:1,name:"ashwitha",course:"Vue",marks:80},
+  ];
+  return (
+    <div className="container mt-5">
+      <h2 className="text-center text-danger mb-4">
+      student details
+      </h2>
+      <table className="table table-bordered table-striped table-hover text-center table-primary">
+        <thead className="table-dark">
+        <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Course</th>
+        <th>Marks</th>
+        </tr>
+        </thead>
+        <tbody>
+          {students.map((stu)=>(
+            <tr key={stu.id}>
+              <td>{stu.id}</td>
+              <td>{stu.name}</td>
+              <td>{stu.course}</td>
+              <td>{stu.marks}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default App

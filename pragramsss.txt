@@ -1,0 +1,165 @@
+1.public class Biodata {
+    public static void main(String[] args) {
+        System.out.println("Name       : Khyathi Sree");
+        System.out.println("Father Name: Manikantaa");
+        System.out.println("Mother Name: babykrishna");
+        System.out.println("Age        : 18");
+        System.out.println("Gender     : Female");
+        System.out.println("College    : Your College Name");
+        System.out.println("Branch     : CSE (AI & ML)");
+        System.out.println("Roll No    : Your Roll Number");
+        System.out.println("Address    : Your Address");
+        System.out.println("Phone No   : Your Phone Number");
+    }
+}
+
+
+2.public class PrimitiveDataTypes {
+    public static void main(String[] args) {
+
+        byte b = 10;
+        short s = 200;
+        int i = 5000;
+        long l = 100000L;
+        float f = 12.5f;
+        double d = 123.456;
+        char c = 'A';
+        boolean flag = true;
+
+        System.out.println("Byte    : " + b);
+        System.out.println("Short   : " + s);
+        System.out.println("Int     : " + i);
+        System.out.println("Long    : " + l);
+        System.out.println("Float   : " + f);
+        System.out.println("Double  : " + d);
+        System.out.println("Char    : " + c);
+        System.out.println("Boolean : " + flag);
+    }
+}
+
+3.import java.util.Scanner;
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        System.out.println("Before Swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
+
+        System.out.println("After Swapping:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+
+        sc.close();
+    }
+}
+
+4.import java.util.Scanner;
+
+public class ArithmeticOperations {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        int a = sc.nextInt();
+
+        System.out.print("Enter second number: ");
+        int b = sc.nextInt();
+
+        System.out.println("Addition = " + (a + b));
+        System.out.println("Subtraction = " + (a - b));
+        System.out.println("Multiplication = " + (a * b));
+        System.out.println("Division = " + (a / b));
+        System.out.println("Modulus = " + (a % b));
+
+        sc.close();
+    }
+}
+
+5.import java.util.Scanner;
+
+public class SimpleInterest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Principal (P): ");
+        double p = sc.nextDouble();
+
+        System.out.print("Enter Rate (R): ");
+        double r = sc.nextDouble();
+
+        System.out.print("Enter Time (T): ");
+        double t = sc.nextDouble();
+
+        double si = (p * r * t) / 100;
+
+        System.out.println("Simple Interest = " + si);
+;
+        sc.close();
+    }
+}
+
+
+6.import java.util.Scanner;
+
+public class CelsiusToFahrenheit {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter temperature in Celsius: ");
+        double celsius = sc.nextDouble();
+
+        double fahrenheit = (celsius * 9 / 5) + 32;
+
+        System.out.println("Temperature in Fahrenheit = " + fahrenheit);
+
+        sc.close();
+    }
+}
+
+
+7.import java.util.Scanner;
+
+public class FahrenheitToCelsius {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter temperature in Fahrenheit: ");
+        double fahrenheit = sc.nextDouble();
+
+        double celsius = (fahrenheit - 32) * 5 / 9;
+
+        System.out.println("Temperature in Celsius = " + celsius);
+
+        sc.close();
+    }
+}
+
+
+8.import java.util.Scanner;
+
+public class AreaOfCircle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the radius: ");
+        double radius = sc.nextDouble();
+
+        double area = 3.14 * radius * radius;
+
+        System.out.println("Area of Circle = " + area);
+
+        sc.close();
+    }
+}
